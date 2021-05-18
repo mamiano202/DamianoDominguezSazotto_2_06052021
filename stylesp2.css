@@ -1,3 +1,21 @@
-h1 {
-    color: red;
+#nav{display:flex;
+            flex-direction: row;
+            justify-content: center;
+            float:right;
+            
+            }
+
+
+
+#hebmar{
+    display: flex;
+
+    background-color: #F2F2F2;
 }
+
+#PlusPop{background-color: #F2F2F2;}
+
+#footer{background-color: #F2F2F2;
+    display:flex;
+            justify-content: space-around;}
+
