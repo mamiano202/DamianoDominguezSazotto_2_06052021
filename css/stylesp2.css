@@ -450,12 +450,36 @@ aside {
   border-radius: 25px 25px 25px 25px;
   box-shadow: 0px 2px 2px 2px grey;
   align-items: center;
-        
+      
+}
 
+
+.item2m{
+  display: ;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 0px 2px 2px 2px grey;
+  align-items: center;}
+
+.item2m img{ width: 100%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 25px 25px 0px 0px;
+
+}
+
+.item2g{
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 0px 2px 2px 2px grey;
+  align-items: center;}
+
+.item2g img{ width: 100%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 25px 25px 0px 0px;
 
 }
 .item2 img{ width: 100%;
-            height: 90%;
+            height: 75%;
             object-fit: cover;
             border-radius: 25px 25px 0px 0px;
 
@@ -484,6 +508,9 @@ aside {
 .iE{grid-column: 4;
     grid-row: 1;
     color: black;}
+
+
+.fp{height: 160px;}
 
 
 #footer {
