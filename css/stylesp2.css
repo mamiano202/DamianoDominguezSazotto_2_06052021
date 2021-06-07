@@ -8,6 +8,16 @@
   font-family: "Raleway", sans-serif;
   src: url("Raleway/Raleway-Italic-VariableFont_wght.ttf");
 }
+@media screen and (max-width: 1280px) /* propriétés CSS pour petits écrans */
+{
+    
+}
+@media all and (max-device-width: 480px)
+{
+    /* Vos règles CSS pour les mobiles ici */
+}
+
+
 
 body {
   font-family: "Raleway";
@@ -19,26 +29,14 @@ header {
   justify-content: space-between;
   align-items: flex-end;
 }
-h1 {
-  font-size: large;
-}
-h2 {
-  font-size: small;
-}
-h3 {
-  font-size: x-small;
-  margin: 0px;
-}
-h4 {
-  font-size: xx-small;
-  margin: 0px;
-}
 
 #bloc_page {
   margin-left: 50px;
   margin-right: 50px;
 }
-
+header nav li a:hover, header nav li a:focus{border-top:  2px solid blue;
+padding: 48px;
+color: #0065FC;}
 nav ul {
   list-style-type: none;
   display: flex;
@@ -49,19 +47,22 @@ nav ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  height: 70px;
 }
 
 nav {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  margin-bottom: 70px;
+  margin-bottom: 0px;
 }
 .inscrire {
   display: flex;
-  margin-bottom: 70px;
+  margin-top: 52px;
 }
-
+p9{color: #0065FC;}
+p8{color: #DEEBFF;}
+p7{color: grey;}
 section {
   display: flex;
   flex-direction: row;
@@ -72,7 +73,8 @@ article {
   background-color: #f2f2f2;
   flex-direction: column;
   border-radius: 20px 20px 20px 20px;
-  flex: 100%;
+  flex: none;
+  width: 75%;
 }
 .point {
   display: flex;
@@ -301,18 +303,6 @@ article {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .fa,
 .fas {
   font-weight: 900;
@@ -381,8 +371,12 @@ aside {
   background-color: #f2f2f2;
   align-items: center;
   justify-content: space-around;
+  flex: none;
+  width: 23%;
 }
-#ann_pop_gen {
+
+aside h5{margin-bottom: 0px;}
+.ann_pop_gen {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -421,6 +415,11 @@ aside {
   font-size: 13px;
   padding-top: 20px;
 }
+.grey {
+  color: gray;
+  font-size: 13px;
+  padding-top: 20px;
+}
 .fa-star:before {
   content: "\f005";
 }
@@ -446,7 +445,15 @@ aside {
   
 }
 
-.item2{
+
+.item2{display: flex;
+flex-direction: column;
+box-shadow: 0px 2px 2px 2px grey;
+border-radius: 25px 25px 25px 25px;
+
+}
+.item2m{display: flex;
+  flex-direction: column;
   border-radius: 25px 25px 25px 25px;
   box-shadow: 0px 2px 2px 2px grey;
   align-items: center;
@@ -454,8 +461,9 @@ aside {
 }
 
 
-.item2m{
-  display: ;
+.item2g{
+  display: flex;
+  flex-direction: column;
   border-radius: 25px 25px 25px 25px;
   box-shadow: 0px 2px 2px 2px grey;
   align-items: center;}
@@ -466,6 +474,8 @@ aside {
   border-radius: 25px 25px 0px 0px;
 
 }
+.fp{display: flex;
+    height: px;}
 
 .item2g{
   border-radius: 25px 25px 25px 25px;
@@ -518,13 +528,19 @@ aside {
   display: flex;
   justify-content: space-around;
   text-decoration: none;
+  
 }
 
 .foot ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
+   
 }
+h6{margin-top: 10px;
+  margin-bottom: 10px;}
+p1{color: grey;}
+
 a {
   text-decoration: none;
   color: black;
