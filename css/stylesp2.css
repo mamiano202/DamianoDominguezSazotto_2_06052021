@@ -8,14 +8,73 @@
   font-family: "Raleway", sans-serif;
   src: url("Raleway/Raleway-Italic-VariableFont_wght.ttf");
 }
-@media screen and (max-width: 1280px) /* propriétés CSS pour petits écrans */
+
+
+
+
+
+@media all and (max-width: 1024px)
 {
+    nav
+    {
+        width: auto;
+        text-align: left;
+    }
     
+    nav ul
+    {
+        flex-direction: column;
+    }
+
+    nav li
+    {
+        padding-left: 4px;
+    }
+    
+    nav a
+    {
+        font-size: 1.1em;
+    }
+    
+    nav a:hover
+    {
+        border-bottom: 0;
+    }
+
+
+    section#herbergement_et_populaire
+    {
+        flex-direction: column;
+    }
+
+    article
+    {
+       background-color: #0065FC; 
+        margin-bottom: 15px;
+      order: 2;  
+    }
+    aside{
+      
+    order: 1;}
+    .ann_pop_gen{display: flex;
+    flex-direction: row;
+  width: 100%;}
+    aside p:last-child
+    {
+        text-align: center;
+    }
+
+    /*.hebergement{ flex-direction: column;width: auto;}
+    .location{ flex-direction: column;width: auto;}
+    .marseille{flex-direction: column;width: auto;}*/
+
 }
-@media all and (max-device-width: 480px)
-{
-    /* Vos règles CSS pour les mobiles ici */
-}
+
+
+
+
+
+
 
 
 
@@ -259,14 +318,6 @@ article {
 
 
 
-.information {
-
-    margin-top: 40px;
-    margin-left: 50px;
-
-}
-
-
 
 .info {
 
@@ -326,7 +377,7 @@ article {
   text-rendering: auto;
   line-height: 1;
 }
-<style > *,
+*,
 ::before,
 ::after {
   box-sizing: border-box;
@@ -440,8 +491,7 @@ aside h5{margin-bottom: 0px;}
   grid-template-rows: 150px 150px;
   justify-content: center;
   flex-direction: row;
-  grid-column-gap: 110px;
-  grid-row-gap: 80px;
+  gap: 20px;
   
 }
 
@@ -474,8 +524,7 @@ border-radius: 25px 25px 25px 25px;
   border-radius: 25px 25px 0px 0px;
 
 }
-.fp{display: flex;
-    height: px;}
+
 
 .item2g{
   border-radius: 25px 25px 25px 25px;
