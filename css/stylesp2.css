@@ -5,7 +5,7 @@
 }
 @font-face {
   font-family: 'Raleway';
-  src: url('fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf');
+  src: url('Raleway/Raleway-VariableFont_wght.ttf');
 }
 body {
   font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
@@ -28,6 +28,8 @@ a {
 #login {
   padding-top: 40px;
   margin-right: 40px;
+  
+  
 }
 
 #login a {
@@ -50,6 +52,8 @@ nav ul li {
   padding-right: 35px;
   padding-left: 35px;
 }
+
+
 
 nav ul li:hover {
   border-top: 3px solid #0065fc;
@@ -105,7 +109,7 @@ h3 {
 .post button {
 
   border: 0;
-  margin-right: 10px;
+  /*margin-right: 10px;*/
   background: #0065FC;
   color: #fff;
   cursor: pointer;
@@ -193,7 +197,7 @@ h3 {
 .item h3 {
 
 
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 900;
   margin-left: 20px;
 }
@@ -283,14 +287,6 @@ font-style: italic;
 
 
 
-
-
-
-
-
-
-
-
 .hotels {
   display: flex;
   padding: 0;
@@ -373,7 +369,7 @@ h3 {
   padding-top: 20px;
 }
 .grey {
-  color: gray;
+  color: rgb(217, 215, 223);
   font-size: 13px;
   padding-top: 20px;
 }
@@ -407,6 +403,7 @@ h3 {
   box-shadow: 0 0 7px #c1c1c1;
   box-sizing: border-box;
   overflow: hidden;
+  background-color: white;
 }
 
 .populaireCard img {
@@ -428,6 +425,7 @@ h3 {
   margin-top: 8px;
   margin-bottom: 0;
 }
+/* Activités à Marseille */
 
 #ActMar h1{
   margin: 2.5rem 0rem 2rem 0rem;
@@ -525,95 +523,65 @@ a {
   color: black;
 }
 
-/* -------------------Responsive sur tablette---------------- */
+/* ------------------------------------------------------Responsive sur tablette--------------------------------------------------------- */
   
   
 @media screen and (max-width: 1024px) {
   
-    
-  /* -------------------hebergements & populaires & activites---------------- */
-  
-  
-     .hotel_card {
-      flex: 40%;
-    }
-  
-    .hotels {
-      flex-direction: column;
-    }
-  
-    .hotels article {
-      order: 2;
-      margin-top: 2.5rem;
-    }
-  
-    .hotels aside {
-      margin: 0;
-    }
-  
-    .populaireTab {
-      display: flex;
-      flex-wrap: wrap;
-  
-    }
-  
-    .populaireCard {
-      flex: 30%;
-      margin-right: 15px;
-    }
-  
-  
-    .activites {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-areas:
-        "a b d"
-        "e c f";
-    }
-  }
-  
-  
-  
-  @media screen and (max-width: 965px) {
-    .populaireCard {
-      flex: 100%;
-    }
-    .hotels .populaire {
-      margin-left: 0px;
-  }
-  }
-  
-  
-  @media screen and (max-width: 768px) {
-    .activites {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-      grid-template-areas:
-        "a b"
-        "c d"
-        "e f";
-    }
-  
-  }
-  
-  
-  /* -------------------Responsive sur mobile---------------- */
-  
-  @media screen and (max-width: 600px) {
-  
     /* -------------------header---------------- */
+
+  #bloc_page{
+    margin: 0px;
+  }
   
-  
-  header {
+  h3{
+    font-size: 1.5rem;
+  }
+    header {
       flex-direction: column;
-  
-  
-    }
+      margin-bottom: 15px;
+  }
   
     header #logo {
       margin: 0 1rem;
+      
     }
   
+    #logo {
+      flex: 1;
+      width: 100px;
+      padding-top: 35px;
+      
+    }
+    #logo img {height: 200%;
+              width: 150%;}
+
+
+   .logo_recherche span {
+    display: none;
+    
+   }
+   .logo_recherche i{
+    display:flex;
+    padding-left: 12px;
+    padding-right: 12px;
+   }
+   .logo_recherche{
+    border-radius: 15px 15px 15px 15px; /* arrondissement des 2 angles à gauche*/
+    margin-right: 0px;
+    /*padding: 0 1.5rem*/
+   }
+
+
+   .position  {
+
+   width: 100px;
+    padding: 18px;
+  }
+  .position i{
+    margin-left: 12px;
+margin-top: 9px;
+  }
     header nav {
   
       order: 3;
@@ -625,7 +593,9 @@ a {
       align-self: flex-end;
       padding-top: 0;
       margin-right: 1rem;
-      margin-top: -2rem;
+      margin-top: -3rem;
+      font-size: x-large;
+      font-weight:bold;
     }
   
     header nav ul {
@@ -634,9 +604,12 @@ a {
     }
   
     nav ul a:hover {
-      color: inherit;
+      /*color: inherit;*/
+      
     }
-  
+    nav ul a{
+      font-weight:450;
+    }
     nav ul li {
       padding-top: 37px;
       padding-bottom: 15px;
@@ -644,6 +617,8 @@ a {
       width: 50%;
       text-align: center;
       border-bottom: 3px solid #f1eeee;
+      font-size: 25px;
+      
     }
   
     nav ul li:hover {
@@ -654,15 +629,39 @@ a {
   /* -------------------filters---------------- */
   
     .slogan_searchbar {
-      margin: 0 1rem;
+      margin: 0 2rem;
+    }
+    .post{
+      height: 80px;
+    }
+    .post > * {
+  border: 1.5px solid #f2f2f2;
+  line-height: 20px;
+  padding:center;
+  
+  font-size: x-large;
+  
+}
+    .slogan h1{font-size: 2rem;}
+    .slogan p{
+      font-size: 24px;
     }
   
-    #filters {
+    .filters {
       width: 100%;
-      margin-left: 1rem;
+      padding: 2rem;
+      margin-right: 0px;
+      margin-top: 0px;
   
     }
-  
+    .filters h2{font-size: 28px;}
+    
+    #search{
+      width: 100%;
+      font-size: 30px;
+      margin-right: -10px;
+    }
+   
     #searchbar {
       display: flex;
   
@@ -690,7 +689,138 @@ a {
     .container {
       margin: 0;
     }
+    .item i {
+
+      width: 70px; /*modification hauteur Item*/
+      height: 70px; /*modification largeur Item*/
+      margin: -3px; /*décalage vers la gauche pour masquer la bordure*/
+        
+    }
+    .item h3 {
+      font-size: 25px;
+      font-weight: 600;
+      
+    }
+    .item {
+
+      height: 70px; /*modification hauteur de la classe Item*/
+      border: 3px solid #e0dada; /*modification épaisseur de la bordure de la classe Item*/
+      font-size: x-large;
+      
+    }
+    
+    .hostings{
+      margin: 2rem;
+      ;
+    }
+    .hostings p{
+      font-size: 23px;
+    }
+
+  /* -------------------hebergements & populaires & activites---------------- */
   
+  #bloc_page {
+    margin: 0 ;
+  }
+
+  article h2{
+    font-size:25px ;
+  }
+     .hotel_card {
+      flex: 40%;
+    }
+  
+    .hotels {
+      flex-direction: column;
+    }
+  
+    .hotels article {
+      order: 2;
+      margin-top: 2.5rem;
+      border-radius: 0px;/* suppression des angles*/
+    }
+    .hotels .populaire{
+      margin-left: 0px;
+      border-radius: 0px;
+      margin-top: 35px;
+    }
+    .hotels aside {
+      margin: 0;
+    }
+    .titlepop{font-size: 32px;
+    margin-top: 25px;
+    padding-bottom: 23px;
+  }
+  
+    .populaireTab {
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 30px;
+  
+    }
+  
+    .populaireCard {
+      flex: 30%;
+      margin-right: 15px;
+      height: 210px
+    }
+
+    .hotel_description p{
+  font-size: 22px;
+}
+    .description_pop p {
+      font-size: 21px;
+      margin-top: 16px;
+    }
+    .blue {
+      
+      font-size: 17px;
+    }
+    .grey{
+      font-size: 17px;
+    }
+    #ActMar{margin: 30px;}
+    .activites {
+      
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas:
+        "a b d"
+        "e c f";
+    }
+  
+  
+  
+  @media screen and (max-width: 965px) {
+    .populaireCard {
+      flex: 100%;
+    }
+    .hotels .populaire {
+      margin-left: 0px;
+  }
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .activites {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas:
+        "a b"
+        "c d"
+        "e f";
+    }
+  
+  }
+  
+  /*
+  /* -----------------------------------------------------------Responsive sur mobile------------------------------------------------------ */
+  
+  @media screen and (max-width: 600px) {
+  
+  h1{
+    font-size: xx-large;
+  }
   
     /* -------------------hebergements & populaires---------------- */
   
@@ -705,7 +835,7 @@ a {
       padding-left: 2rem;
       padding-right: 1rem;
     }
-  
+    
     .hotels article {
       border-radius: 0;
       padding-left: 2rem;
@@ -716,6 +846,12 @@ a {
     .hotel_card {
       flex: 100%;
     }
+    .hotel_card img{
+      height: 170px;
+    }
+    .hotel_description{
+      height: 120px;
+    }
   
     .populaireCard {
       flex: 100%;
@@ -724,9 +860,9 @@ a {
     /* -------------------activites---------------- */
   
     .activites {
-  
+      
       grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(6, 200px);
+      grid-template-rows: repeat(6, 290px);
       grid-template-areas:
         "a"
         "c"
@@ -737,7 +873,7 @@ a {
     }
   
     .activites img {
-      height: 150px;
+      height: 200px;
     }
   
     .activites .text-aside {
@@ -750,7 +886,18 @@ a {
   
   /* -------------------footer---------------- */
   
-      footer {
-      padding-left: 35px;
-    }
-  }
+      #footer{
+        flex-direction: column;
+      }
+      .foot{
+        font-size: 24px;
+        padding-left: 30px;
+      padding-top: 50px;}
+      .foot h6{
+        font-size: 26px;
+        padding-bottom: 25px;
+      } 
+      .foot li{
+        padding-bottom: 15px;
+      }
+  
