@@ -5,12 +5,105 @@
 }
 /*@font-face {
   font-family: "Raleway";
-  src: url("fonts/Raleway/Raleway-VariableFont_wght.ttf");*/
-}
+  src: url("fonts/Raleway/Raleway-VariableFont_wght.ttf");
+}*/
 body {
   font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
   color: black;
 }
+
+
+.hotel_card {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hotel_card:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+.populaireCard  {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.populaireCard:hover  {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+.img1 
+   {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img1:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+.img2
+   {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img2:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+
+.img3 
+   {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img3:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.img4
+   {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img4:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.img5 
+   {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img5:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+.img6 
+   {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img6:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
 
 #bloc_page {
   margin: 0 50px 4rem;
@@ -256,6 +349,10 @@ user agent stylesheet i {
 article h1{
   padding-left: 20px;
 }
+article h2 {
+  
+  margin-left: 20px;
+}
 .hotels aside {
  padding-left: 24px;
   padding-right: 24px;
@@ -384,7 +481,7 @@ h3 {
 
 .activites {
   display: grid;
-  height: auto;
+  height: max-content;
   gap: 27px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, auto);
@@ -495,14 +592,30 @@ a {
   color: black;
 }
 
+/* ------------------------------------------------------Responsive sur small Laptop--------------------------------------------------------- */
+@media screen and (max-width: 1200px){
+  .hotels article{
+order: 2;
+  }
+  .hotels {
+    flex-direction: column;
+  }
+  .populaireTab{
+    flex-direction: row;
+    gap: 30px
+    ;
+  }
+}
+
+
+
+
 /* ------------------------------------------------------Responsive sur tablette--------------------------------------------------------- */
 
 @media screen and (max-width: 1024px) {
   /* -------------------header---------------- */
 
-  /*#bloc_page{
-    margin: 0px;
-  }*/
+  
 
   h3 {
     font-size: 1.2rem;
@@ -537,7 +650,7 @@ a {
   .logo_recherche {
     border-radius: 15px 15px 15px 15px; /* arrondissement des 2 angles à gauche*/
     margin-right: 0px;
-    /*padding: 0 1.5rem*/
+    
   }
 
   .position {
@@ -679,7 +792,7 @@ a {
 
   article h2 {
     font-size: small;
-    margin-left: 40px;
+    /*margin-left: 40px;*/
     
 
   }
@@ -694,8 +807,7 @@ a {
   font-size: 1.3rem;
 }
   .hotels article {
-    order: 2;
-    /*margin-top: 2.5rem;*/
+    
     border-radius: 0px; /* suppression des angles*/
   }
   .hotels .populaire {
@@ -714,9 +826,9 @@ a {
 
   .populaireTab {
     
-    flex-direction: row;
+   
     padding-bottom: 30px;
-    gap: 27px;
+    
   }
 .populaireCard img{
   width: 30%;
@@ -899,6 +1011,7 @@ a {
     margin: 30px 20px;
   }
   .activites {
+    
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 290px);
     grid-template-areas:
@@ -946,6 +1059,7 @@ a {
     
   flex-direction: column; 
   padding-top: 0px;
+  
   width: max-content;
     
   }
@@ -1040,10 +1154,10 @@ height: 70px;
   font-size: smaller;
 }
 .blue{
-  font-size: small;
+  font-size: x-small;
 }
 .grey{
-  font-size: small;
+  font-size: x-small;
 }
 h1{
   font-size: 1.5rem;
