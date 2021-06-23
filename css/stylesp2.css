@@ -3,9 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-@font-face {
+/*@font-face {
   font-family: "Raleway";
-  src: url("fonts/Raleway/Raleway-VariableFont_wght.ttf");
+  src: url("fonts/Raleway/Raleway-VariableFont_wght.ttf");*/
 }
 body {
   font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
@@ -184,6 +184,7 @@ h3 {
 .hostings {
   margin-top: 30px;
   display: flex;
+  margin-bottom: 30px;
 }
 
 .hostings i {
@@ -244,9 +245,6 @@ user agent stylesheet i {
   gap: 20px;
 }
 
-.hotels .populaire {
-  /*margin-left: 20px;*/
-}
 
 .hotels article,
 .hotels aside {
@@ -331,7 +329,7 @@ h3 {
 
 .populaireTab {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .titlepop {
@@ -347,7 +345,7 @@ h3 {
 .populaireCard {
   display: flex;
   height: 145px;
-  width: 400px;
+  width: 350px;
   border: 5px solid #fff;
   border-radius: 20px;
   margin-bottom: 30px;
@@ -358,6 +356,7 @@ h3 {
 }
 
 .populaireCard img {
+  
   width: 40%;
   height: 100%;
   object-fit: cover;
@@ -365,6 +364,7 @@ h3 {
 
 .description_pop {
   display: flex;
+  width: 150px;
   flex-direction: column;
   justify-content: space-between;
   font-size: 15px;
@@ -446,11 +446,35 @@ h3 {
   grid-area: f;
 }
 
-#footer {
+
+footer{
   background-color: #f2f2f2;
+}
+#footer {
+  
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 1000px;
+  /* align-items: center; */
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  /* padding-right: 100px; */
   text-decoration: none;
+  /* height: 200px; */
+}
+
+.foot{
+  /*padding-right: 315px;*/
+  width: max-content;
+}
+.foot li{
+  padding-bottom: 10px;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  
 }
 
 .foot ul {
@@ -498,7 +522,7 @@ a {
     padding-top: 35px;
   }
   #logo img {
-    height: 200%;
+    /*height: 200%;*/
     width: 150%;
   }
 
@@ -563,9 +587,11 @@ a {
 
   /* -------------------filters---------------- */
 
+  
   .slogan_searchbar {
-    margin: 0 0rem;
-  }
+    margin: 0 20px 0rem 20px;
+}
+ 
   .post {
     height: 80px;
   }
@@ -664,7 +690,9 @@ a {
   .hotels {
     flex-direction: column;
   }
-
+.hotels h3{
+  font-size: 1.3rem;
+}
   .hotels article {
     order: 2;
     /*margin-top: 2.5rem;*/
@@ -685,25 +713,24 @@ a {
   }
 
   .populaireTab {
-    display: flex;
-    flex-wrap: wrap;
+    
+    flex-direction: row;
     padding-bottom: 30px;
     gap: 27px;
   }
-
+.populaireCard img{
+  width: 30%;
+}
   .populaireCard {
-    flex: 30%;
+    /*flex: 30%;*/
     /*margin-right: 15px;*/
-    height: 210px;
+    /*height: 210px;*/
   }
 
   .hotel_description p {
     font-size: 22px;
   }
-  .description_pop p {
-    font-size: 21px;
-    margin-top: 16px;
-  }
+  
   .blue {
     font-size: 17px;
   }
@@ -721,16 +748,40 @@ a {
       "e c f";
   }
 
+  #footer {
+  
+    
+    width: 765px;
+     
+    
+  }
+
 }
 
   @media screen and (max-width: 965px) {
+    
+    .populaireTab{
+      flex-direction: column;
+    }
     .populaireCard {
-      flex: 100%;
+      
+      width: 100%;
       margin-bottom: 0px;
+      
     }
     .hotels .populaire {
       margin-left: 0px;
   }
+
+  .description_pop{
+    width: max-content;
+  }
+
+  .description_pop p {
+    font-size: 21px;
+    margin-top: 5px;
+  }
+
   .hotels .marseille {
    gap: 0px;
    flex-direction: column;
@@ -744,6 +795,13 @@ a {
   h3 {
     font-size: 12px;
   }
+
+  #footer {
+  
+    padding-left: 0px;  
+  }
+
+  
   }
   
   
@@ -755,6 +813,15 @@ a {
         "a b"
         "c d"
         "e f";
+    }
+   
+    #footer {
+  
+    
+      width: 600px;
+     
+      
+      
     }
   
   }
@@ -858,11 +925,9 @@ a {
     margin: 0 30px;
   }
 
-  /* -------------------footer---------------- */
+  /* -------------------footer max 600---------------- */
 
-  #footer {
-    flex-direction: column;
-  }
+  
   .foot {
     font-size: small;
     padding-left: 30px;
@@ -874,6 +939,15 @@ a {
   }
   .foot li {
     padding-bottom: 15px;
+  }
+
+  #footer {
+  
+    
+  flex-direction: column; 
+  padding-top: 0px;
+  width: max-content;
+    
   }
 }
 
@@ -918,8 +992,8 @@ a {
 
   }
   .logo_recherche i{
-    padding-left: auto;
-    padding-right: auto;
+    /*padding-left: auto;
+    padding-right: auto;*/
   }
   .item{
     margin-right: 10px;
