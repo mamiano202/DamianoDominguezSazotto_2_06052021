@@ -15,7 +15,7 @@ body {
     color: black;
 }
 
-.hotel_card {
+/*.hotel_card {
     -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-transition: .3s ease-in-out;
@@ -109,7 +109,7 @@ body {
 .img6:hover {
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
-}
+}*/
 
 #bloc_page {
     margin: 0 50px 4rem;
@@ -354,7 +354,6 @@ user agent stylesheet i {
 .hotels aside {
     background-color: #f2f2f2;
     border-radius: 20px;
-    /*padding-left: 2rem;*/
     padding-top: 2rem;
 }
 
@@ -375,7 +374,7 @@ article h2 {
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
-    gap: 25px;
+    gap: 10px;
 }
 
 .hotels h1,
@@ -444,10 +443,10 @@ h3 {
     justify-content: space-between;
 }
 
-.populaireIcon {
+/*.populaireIcon {
     justify-content: space-between;
     align-items: baseline;
-}
+}*/
 
 .populaireCard {
     display: flex;
@@ -463,14 +462,19 @@ h3 {
 }
 
 .populaireCard img {
-    width: 40%;
-    height: 100%;
+    width: 120px;
     object-fit: cover;
+    height: 100%;
+    
+    
+    
+    
 }
 
 .description_pop {
+    
     display: flex;
-    width: 150px;
+    width: max-content;
     flex-direction: column;
     justify-content: space-between;
     font-size: 15px;
@@ -478,10 +482,7 @@ h3 {
     margin: 10px;
 }
 
-.populaireDescription .hotel_name+p {
-    margin-top: 8px;
-    margin-bottom: 0;
-}
+
 
 
 /* Activités à Marseille */
@@ -559,17 +560,17 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 1000px;
-    /* align-items: center; */
+    
     padding-top: 50px;
     padding-left: 50px;
     padding-bottom: 20px;
-    /* padding-right: 100px; */
+   
     text-decoration: none;
-    /* height: 200px; */
+    
 }
 
 .foot {
-    /*padding-right: 315px;*/
+   
     width: max-content;
 }
 
@@ -639,7 +640,7 @@ a {
         padding-top: 35px;
     }
     #logo img {
-        /*height: 200%;*/
+        
         width: 150%;
     }
     .logo_recherche span {
@@ -704,7 +705,7 @@ a {
     .post>* {
         border: 1.5px solid #f2f2f2;
         line-height: 20px;
-        /*padding:center;*/
+        
         font-size: x-large;
     }
     .slogan h1 {
@@ -716,7 +717,7 @@ a {
     .filters {
         width: 100%;
         padding: 2rem 2rem;
-        /*margin-right: 0px;*/
+       
         margin-top: 0px;
     }
     .filters h2 {
@@ -844,9 +845,7 @@ a {
     .hotels .populaire {
         margin-left: 0px;
     }
-    .description_pop {
-        width: max-content;
-    }
+    
     .description_pop p {
         font-size: 21px;
         margin-top: 5px;
@@ -934,12 +933,24 @@ a {
         max-height: 120px;
         
     }
+
+    .text_des h3 {
+        font-size: 1px;
+    }
+    .text_des p {
+        font-size: small;
+    }
+
     .populaireCard h3{
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .populaireCard img {
-        object-fit:fill;
+        
+        /*width: 140px;*/
+        min-width: 135px;
+        max-height: 120px;
+        max-width: 136px;
     }
     /* -------------------activites max 600---------------- */
     #ActMar {
@@ -1050,9 +1061,9 @@ a {
     .hotel_description p {
         font-size: x-small;
     }
-    .hotels h3 {
+    /*.hotels h3 {
         font-size: 19px;
-    }
+    }*/
     .blue {
         font-size: x-small;
     }
