@@ -777,7 +777,7 @@ a {
     }
     article h2 {
         font-size: small;
-        /*margin-left: 40px;*/
+       
     }
     .hotel_card {
         flex: 40%;
@@ -789,8 +789,7 @@ a {
         font-size: 1.3rem;
     }
     .hotels article {
-        border-radius: 0px;
-        /* suppression des angles*/
+        border-radius: 0px; /* suppression des angles*/
     }
     .hotels .populaire {
         margin-left: 0px;
@@ -811,11 +810,7 @@ a {
     .populaireCard img {
         width: 30%;
     }
-    .populaireCard {
-        /*flex: 30%;*/
-        /*margin-right: 15px;*/
-        /*height: 210px;*/
-    }
+   
     .hotel_description p {
         font-size: 22px;
     }
@@ -890,7 +885,7 @@ a {
 
 @media screen and (max-width: 600px) {
     h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     h1 {
         font-size: xx-large;
@@ -915,19 +910,14 @@ a {
         margin-left: 0;
         width: 100%;
     }
-    aside.populaire {
-        /*margin-right: -20px;
-    margin-left: -20px;*/
-    }
+    
     .hotels aside {
         border-radius: 0;
-        /*padding-left: 2rem;
-    padding-right: 1rem;*/
+       
     }
     .hotels article {
         border-radius: 0;
-        /*padding-left: 2rem;
-    padding-right: 0rem;*/
+       
         background-color: #fff;
     }
     .hotel_card {
@@ -941,6 +931,15 @@ a {
     }
     .populaireCard {
         flex: 100%;
+        max-height: 120px;
+        
+    }
+    .populaireCard h3{
+        font-size: 1.3rem;
+    }
+
+    .populaireCard img {
+        object-fit:fill;
     }
     /* -------------------activites max 600---------------- */
     #ActMar {
@@ -1052,7 +1051,7 @@ a {
         font-size: x-small;
     }
     .hotels h3 {
-        font-size: smaller;
+        font-size: 19px;
     }
     .blue {
         font-size: x-small;
