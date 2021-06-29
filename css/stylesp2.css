@@ -450,7 +450,7 @@ h3 {
     justify-content: space-between;
 }
 section.hotels h2{
-    
+    display: none;
     visibility: hidden;
     margin: 0;
     padding: 0;
