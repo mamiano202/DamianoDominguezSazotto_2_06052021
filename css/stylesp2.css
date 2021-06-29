@@ -15,7 +15,7 @@ body {
     color: black;
 }
 
-/*.hotel_card {
+.hotel_card {
     -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-transition: .3s ease-in-out;
@@ -23,8 +23,8 @@ body {
 }
 
 .hotel_card:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .populaireCard {
@@ -35,8 +35,8 @@ body {
 }
 
 .populaireCard:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .img1 {
@@ -47,8 +47,8 @@ body {
 }
 
 .img1:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .img2 {
@@ -59,8 +59,8 @@ body {
 }
 
 .img2:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .img3 {
@@ -71,8 +71,8 @@ body {
 }
 
 .img3:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .img4 {
@@ -83,8 +83,8 @@ body {
 }
 
 .img4:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .img5 {
@@ -95,8 +95,8 @@ body {
 }
 
 .img5:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .img6 {
@@ -107,9 +107,9 @@ body {
 }
 
 .img6:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-}*/
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
 
 #bloc_page {
     margin: 0 50px 4rem;
@@ -342,7 +342,11 @@ h3 {
 user agent stylesheet i {
     font-style: italic;
 }
-
+.heb{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-left: 30px;
+}
 .hotels {
     display: flex;
     padding: 0;
@@ -402,6 +406,7 @@ h2 {
 
 .hotel_description {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: space-around;
     background-color: #fff;
@@ -438,11 +443,18 @@ h3 {
 }
 
 .titlepop {
-    margin: 0;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
 }
-
+section.hotels h2{
+    
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+}
 /*.populaireIcon {
     justify-content: space-between;
     align-items: baseline;
@@ -1061,9 +1073,9 @@ a {
     .hotel_description p {
         font-size: x-small;
     }
-    /*.hotels h3 {
+    .hotels h3 {
         font-size: 19px;
-    }*/
+    }
     .blue {
         font-size: x-small;
     }
